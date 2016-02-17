@@ -9,7 +9,7 @@ COPY node_app/package.json /usr/src/app/
 RUN npm install
 
 # Bundle app source
-COPY node_app/server.js /usr/src/app
+COPY node_app/server.js /usr/src/app/
 
 EXPOSE 8080
 CMD [ "npm", "start" ]
